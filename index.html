@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Interactive Valentine’s Day website with 3D envelope animation, glassmorphism UI, dark mode, theme toggle, confetti, personalized messages, and WhatsApp sharing. Built with HTML, CSS, and JavaScript." />
+    <meta name="author" content="Isha">
+    <title>Valentine Surprise 💌</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Floating Hearts -->
+    <div id="hearts-container"></div>
+    <!-- Theme + Play Music + Dark Mode Controls -->
+    <div class="top-controls">
+        <button id="themeToggle">🎨 Change Theme</button>
+        <button class="music-btn" id="musicToggle">🎵 Play Music</button>
+        <button id="darkToggle">🌙 Dark Mode</button>
+    </div>
+    <audio id="bgMusic" src="song.mp3" loop></audio>
+    <!-- Landing -->
+    <section id="landing" class="page active">
+        <div class="envelope hero-envelope" id="openEnvelope">
+            <div class="envelope-back"></div>
+            <div class="envelope-flap"></div>
+            <div class="letter">Open Me 💌</div>
+        </div>
+    </section>
+    <!-- Name Input Page -->
+    <section id="name" class="page glass">
+        <h2>What’s your name? 💬</h2>
+        <input type="text" id="userName" placeholder="Enter your name" />
+        <button onclick="saveName()">Continue ➜</button>
+    </section>
+    <!-- Message Page -->
+    <section id="message" class="page glass">
+        <h1 id="greet"></h1>
+        <p>You make every day brighter just by being you ... 💗</p>
+        <p>
+            Every moment with you feels like magic. You are my today, my tomorrow, and my forever. Happy Valentine’s Day
+            ..
+            💗
+        </p>
+        <p>
+            In a world full of temporary things, you are my constant, my safe place, and my greatest blessing. I’m so
+            lucky to have you . 💗
+        </p>
+        <button onclick="goTo('gallery')">Next ➜</button>
+    </section>
+    <!-- Gallery Page -->
+    <section id="gallery" class="page glass">
+        <h2>Our Memories 📸</h2>
+        <div class="gallery">
+            <img src="images/pic1.jpg" />
+            <img src="images/pic3.jpg" />
+            <img src="images/pic4.jpg" />
+            <img src="images/pic2.jpg" />
+            <img src="images/pic5.jpg" />
+
+        </div>
+        <button onclick="goTo('final')">Next ➜</button>
+    </section>
+    <!-- Final Page -->
+    <section id="final" class="page glass">
+        <h2>Will You Be My Valentine? 💖</h2>
+        <div class="btn-group">
+            <button class="yes" onclick="yes()">Yes 🥰</button>
+            <button class="no" id="noBtn">No 🥲</button>
+        </div>
+        <p id="result"></p>
+        <button class="share" id="shareBtn">📤 Share on WhatsApp</button>
+    </section>
+    <!-- Celebration Effects -->
+    <div id="celebrate"></div>
+    <!-- Fireworks Canvas -->
+    <canvas id="fireworksCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
