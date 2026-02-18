@@ -19,7 +19,7 @@ featuring 3D envelope animation, glassmorphism UI, theme switching, dark mode, b
 
 - HTML5
 - CSS3 (Glassmorphism + Animations)
-- JavaScript (DOM Manipulation & Effects)
+- JavaScript 
 
 🌐 Live Demo
 
