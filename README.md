@@ -3,11 +3,6 @@
 An interactive Valentine’s Day web experience built using **HTML, CSS, and JavaScript**.
 featuring 3D envelope animation, glassmorphism UI, theme switching, dark mode, background music, gallery section, confetti effects, fireworks animation, and WhatsApp sharing.
 
-#Demo
-
-![video mp4](https://github.com/stackedbyisha/Valentine-Website/blob/70aa2b5cf19c6cb180e3e87f155317dced450eff/demo.mp4)
-
-https://github.com/stackedbyisha/Valentine-Website/blob/70aa2b5cf19c6cb180e3e87f155317dced450eff/demo.mp4
 
 ✨ Features
 
